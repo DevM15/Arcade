@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Arcade</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="images/logo.png" alt=""></div>
+        <div class="nav-option">
+            <ul>
+                <li><button onclick="closeNav()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button></li>
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="service.html" class="active">SERVICES</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><span>+675 334 567 223</span></li>
+            </ul>
+            <button onclick="openNav()"><i class="fa-solid fa-bars" style="color: #fff;"></i></button>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Services <a>.</a></h1>
+    </div>
+    <div class="service">
+        <div class="slider"></div>
+        <div class="service-text">
+            <h1></h1>
+            <ul>
+                <li>
+                    <h3></h3>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-media">
+            <ul>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+        </div>
+        <p>
+            Copyright © 2024 All rights reserved. <br>
+            This template is made with <i class="fa-regular fa-heart"></i> by <a>Colorlib</a>
+        </p>
+        <div class="footer-text">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+            </ul>
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>FAQ</li>
+                <li>Help Desk</li>
+                <li>Job Aplications</li>
+                <li>Site Map</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Contact us</li>
+                <li>Newsletter</li>
+                <li>Clients Testimonials</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script>
+        function openNav() {
+            document.querySelector('.nav ul').style.right = "0px";
+            document.querySelector('.nav').style.overflow = "visible";
+        }
+        function closeNav() {
+            document.querySelector('.nav ul').style.right = "-300px";
+            document.querySelector('.nav').style.overflow = "hidden";
+        }
+    </script>
+</body>
+</html>

@@ -12,13 +12,20 @@
 
 <body>
     <div class="nav">
+       
         <div class="logo"><img src="images/logo.png" alt=""></div>
         <div class="nav-option">
             <ul>
-                <li><a href="" class="active">HOME</a><a href="about.html">ABOUT US</a><a href="">SERVICES</a><a
-                        href="">PORTFOLIO</a><a href="">CONTACT</a><span>+675 334 567 223</span></li>
+                <li><button onclick="closeNav()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button></li>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><span>+675 334 567 223</span></li>
             </ul>
         </div>
+         
     </div>
     <div class="hero">
         <div class="hero-bg"></div>
@@ -218,7 +225,17 @@
             <li>FAQ</li>
         </ul>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function openNav() {
+            document.querySelector('.nav ul').style.right = "0px";
+            document.querySelector('.nav').style.overflow = "visible";
+        }
+        function closeNav() {
+            document.querySelector('.nav ul').style.right = "-300px";
+            document.querySelector('.nav').style.overflow = "hidden";
+        }
+    </script>
 </body>
 
 </html>
