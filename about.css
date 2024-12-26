@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo{
+    padding: 20px 60px 30px;
+    background-color: #121212;
+    cursor: pointer;
+}
+
+.nav-option ul {
+    padding-right: 10px;
+    display: flex;
+}
+
+.nav-option ul li{
+    list-style: none;
+}
+
+.nav-option ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-option ul li a::after {
+    position: absolute;
+    content: " ";
+    top: -40px;
+    left: 50%;
+    width: 2px;
+    height: 0px;
+    background: #baff00;
+    transition: all 0.4s;
+}
+
+.nav-option ul li>a.active::after{  
+    height: 25px;
+}
+
+.nav-option ul li a:hover::after{
+    height: 25px;
+}
+
+.nav-option ul li span{
+    margin: 30px 50px 0 0;
+    padding: 5px 10px;
+    background: #baff00;
+    font-weight: 700;
+    color: #212529;
+}
+
+.nav-option button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-right: 20px;
+    display: none;
+}
+
+/* hero */
+
+.hero{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 445px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1{
+    min-width: 1140px;
+    margin: 0 auto;   
+    font-size: 82px;
+    font-weight: 700; 
+    color: white;
+}
+
+.hero h1 a{
+    color: #baff00;
+}
+
+/* studio */
+
+.studio{
+    max-width: 1140px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.studio-text h1{
+    font-size: 55px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.studio-text a{
+    background-color: #baff00;
+    padding: 0 10px;
+}
+
+.studio-text{
+    padding: 0 15px;
+    width: 90%;
+}
+
+.studio .text{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: #727272;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.studio-img img{
+    width: 100%;
+}
+
+/* cta */
+
+.cta{
+    display: flex;
+    margin: 100px 0;
+}
+
+.cta>img{
+    max-width: 600px;
+    height: 800px;
+}
+
+.cta-text{
+    background-color: #222222;
+    position: absolute;
+    right: 0;
+    max-width: 1000px;
+    padding: 100px 150px;
+    color: white;
+    margin-top: 100px;
+}
+
+.cta-text h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.cta-text h1 a{
+    background-color: #baff00;
+    color: #222;
+    padding: 0 10px;
+}
+
+/* team */
+
+.team{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.team a{
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #baff00;
+    padding: 5px 10px;
+}
+
+.testimonials{
+    margin: 100px 0;
+    display: flex;
+}
+
+.testimonials .card{
+    max-width: 295px;
+    margin: auto;
+    position: relative;
+}
+
+.testimonials .card div{
+    position: absolute;
+    bottom: 80px;
+    right: -40px;
+    background-color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 6px 7px 20px rgba(114, 114, 114, 0.21);
+}
+
+.team .testimonials .card p{
+    font-size: 16px;
+    color: #727272;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero h1{
+        min-width: 960px;
+    }
+    .studio{
+        max-width: 960px;
+    }
+    .studio-text h1{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .cta-text{
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav-option ul li a {
+        margin-right: 20px;
+        font-size: 12px;
+    }
+    .nav-option ul li span{
+        margin: 30px 20px 0 0;
+    }
+    .logo {
+        padding: 20px 30px 30px;
+    }
+    .hero h1{
+        min-width: 720px;
+    }
+    .studio{
+        flex-direction: column;
+        max-width: 720px;
+    }
+    .studio-text{
+        width: 100%;
+    }
+    .cta>img{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .nav-option button{
+        display: block;
+    }
+    .hero h1{
+        font-size: 55px;
+        min-width: 480px;
+    }
+    .nav ul{
+        position: absolute;
+        width: 40%;
+        padding: 33px;
+        top: 0;
+        height: 100vh;
+        background-color: black;
+        right: -300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.5s;
+    }
+    .nav-option ul li a::after{
+        top: auto;
+        left: -20%;
+    }
+    .nav-option ul li span{
+        display: none;
+    }
+    .studio{
+        flex-direction: column;
+        max-width: 480px;
+    }
+    .studio-text h1{
+        font-size: 45px;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .studio-text{
+        width: 100%;
+    }
+    .cta>img{
+        display: none;
+    }
+    .cta-text{
+        width: 100%;
+        padding: 100px;
+    }
+    .cta-text h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .nav-option button{
+        display: block;
+    }
+    .logo {
+        padding: 20px 30px 30px;
+    }
+    .hero h1{
+        font-size: 55px;
+        min-width: auto;
+    }
+    .nav ul {
+        position: absolute;
+        width: 90%;
+        padding: 33px;
+        top: 0px;
+        height: 100vh;
+        background-color: black;
+        right: -500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.5s;
+    }
+    .nav-option ul li a::after{
+        top: auto;
+        left: -20%;
+    }
+    .nav-option ul li span{
+        display: none;
+    }
+    .studio{
+        flex-direction: column;
+        max-width: 480px;
+    }
+    .studio-text h1{
+        font-size: 45px;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .studio-text{
+        width: 100%;
+    }
+    .studio-img{
+        margin: 0 10px;
+    }
+    .cta>img{
+        display: none;
+    }
+    .cta-text{
+        width: 100%;
+        padding: 50px;
+    }
+    .cta-text h1{
+        font-size: 40px;
+    }
+}
