@@ -98,6 +98,28 @@
     color: #baff00;
 }
 
+/* gallery */
+
+.gallery{
+    padding: 50px 0;
+}
+
+.gallery-option{
+    display: flex;
+    gap: 30px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.gallery-option button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* footer */
 
 .footer{
     padding: 110px 100px;
