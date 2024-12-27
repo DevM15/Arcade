@@ -344,6 +344,7 @@
     }
     .footer{
         flex-direction: column-reverse;
+        padding: 110px 0;
     }
     .footer-text{
         flex-direction: column;
@@ -358,7 +359,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         padding-top: 0;
-        width: 400px;
+        width: fit-content;
         display: flex;
     }
     .footer-media ul{
