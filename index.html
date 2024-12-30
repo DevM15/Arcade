@@ -154,6 +154,22 @@
                 Won</p>
         </div>
     </div>
+    
+    <h1 class="project-head"><a>Projects</a></h1>
+    <div class="slider2">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img1"></div>
+    </div>
+    <div class="slider3">
+        <img src="https://themewagon.github.io/arcade/img/clients/1.png" alt="">
+        <img src="https://themewagon.github.io/arcade/img/clients/2.png" alt="">
+        <img src="https://themewagon.github.io/arcade/img/clients/3.png" alt="">
+        <img src="https://themewagon.github.io/arcade/img/clients/4.png" alt="">
+        <img src="https://themewagon.github.io/arcade/img/clients/5.png" alt="">
+    </div>
     <div class="footer">
         <div class="footer-media">
             <ul>
@@ -206,6 +222,59 @@
     <script>
         $(document).ready(function(){
          $('.hero-ctn').slick({
+            slidesToShow: 1
+         });
+        });	
+        $(document).ready(function(){
+         $('.slider3').slick({
+            arrows: false,
+            slidesToShow: 4,
+            infinite: true,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+                }
+            ]
+         });
+        });	
+        $(document).ready(function(){
+         $('.slider2').slick({
+            arrows: false,
+            slidesToShow: 4,
+            responsive: [
+                {
+                breakpoint: 1199,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+                }
+            ]
          });
         });	
     </script>

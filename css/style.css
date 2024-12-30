@@ -127,8 +127,8 @@
     justify-content: end;
     color: white;
     position: relative;
-    margin: 200px 330px;
-    height: 430px;
+    margin: 160px 330px;
+    height: 480px;
     overflow: hidden;
 }
 
@@ -139,6 +139,7 @@
 }
 
 .hero-container::after{
+    margin: 1px;
     content: " ";
     width: 190px;
     height: 300px;
@@ -208,6 +209,21 @@
 
 .hero-slider-btn button:hover{
     color: #baff00;
+}
+
+.slick-arrow{
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.slick-next{
+    left: 90px;
 }
 
 .rightbar{
@@ -514,6 +530,71 @@
     font-weight: 500;
 }
 
+/* slider2 */
+
+.project-head{
+    max-width: 1140px;
+    margin: 100px auto;
+}
+
+.project-head a{
+    background-color: #baff00;
+    padding: 10px;
+}
+
+.slider2{
+    height: 550px;
+}
+
+.img1{
+    background-image: url(https://themewagon.github.io/arcade/img/projects/1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    height: 550px !important;
+}
+
+.img2{
+    background-image: url(https://themewagon.github.io/arcade/img/projects/2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin: 10px;
+    height: 550px !important;
+}
+
+.img3{
+    background-image: url(https://themewagon.github.io/arcade/img/projects/3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin: 10px;
+    height: 550px !important;
+}
+
+.img4{
+    background-image: url(https://themewagon.github.io/arcade/img/projects/4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin: 10px;
+    height: 550px !important;
+}
+
+
+/* slider3 */
+
+.slider3{
+    max-width: 1140px;
+    margin: 100px auto;
+}
+
+.slider3 img{
+    margin: 0 35px;
+    height: 80px;
+}
+
+
 
 .footer{
     padding: 110px 100px;
@@ -600,6 +681,12 @@
     .milestone{
         max-width: 960px;
     }
+    .slider3{
+        max-width: 960px;
+    }
+    .project-head{
+        max-width: 960px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -614,7 +701,7 @@
         padding: 20px 30px 30px;
     }
     .hero-ctn{
-        margin: 100px auto;
+        margin: 160px 200px;
     }
     .hero-container{
         padding-left: 95px;
@@ -659,6 +746,9 @@
     .milestone div{
         flex: 0 0 50%;
     }
+    .slider3{
+        max-width: 720px;
+    }
     .footer{
         flex-direction: column-reverse;
     }
@@ -684,6 +774,9 @@
     }
     .footer-media ul li{
         margin: 10px;
+    }
+    .project-head{
+        max-width: 720px;
     }
 }
 
@@ -775,6 +868,12 @@
     .milestone div{
         flex: 0 0 100%;
     }
+    .slick-next{
+        left: 45%;
+    }
+    .slick-prev{
+        left: 30%;
+    }
     .footer{
         flex-direction: column-reverse;
     }
@@ -803,6 +902,9 @@
     }
     .footer-media ul li{
         margin: 10px;
+    }
+    .project-head{
+        max-width: 540px;
     }
 }
 
@@ -837,9 +939,17 @@
         display: none;
     }
     .hero-ctn{
-        margin:  auto;
+        margin:  210px 0;
         text-align: center;
         justify-content: center;
+    }
+    .slick-next{
+        top: 40%;
+        left: 52%;
+    }
+    .slick-prev{
+        top: 40%;
+        left: 32%;
     }
     .hero-container{
         padding: 0;
@@ -943,5 +1053,9 @@
     }
     .footer-media ul li{
         margin: 10px;
+    }
+    .project-head{
+        max-width: 100%;
+        margin: 20px;
     }
 }
