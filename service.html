@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/service.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Arcade</title>
+
+    <!-- slick carousel -->
+    <script type="text/javascript" src="https:/code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https:/code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <div class="nav">
@@ -27,7 +33,11 @@
         <h1>Services <a>.</a></h1>
     </div>
     <div class="service">
-        <div class="slider"><img src="https://themewagon.github.io/arcade/img/service/1.jpg" alt=""></div>
+        <div class="slider">
+            <img src="https://themewagon.github.io/arcade/img/service/1.jpg" alt="">
+            <img src="https://themewagon.github.io/arcade/img/service/2.jpg" alt="">
+            <img src="https://themewagon.github.io/arcade/img/service/3.jpg" alt="">
+        </div>
         <div class="service-text">
             <h1>We offer top quality project <a>services</a></h1>
             <ul>
@@ -165,6 +175,13 @@
             document.querySelector('.nav ul').style.right = "-600px";
             document.querySelector('.nav').style.overflow = "hidden";
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+         $('.slider').slick({
+             arrows: false,
+         });
+        });	
     </script>
 </body>
 </html>

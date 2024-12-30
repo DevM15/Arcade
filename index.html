@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Arcade</title>
-</head>
 
+     <!-- slick carousel -->
+     <script type="text/javascript" src="https:/code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" src="https:/code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
 <body>
     <div class="nav">
         <div class="logo"><img src="images/logo.png" alt=""></div>
@@ -17,7 +22,7 @@
             <ul>
                 <li><button onclick="closeNav()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button></li>
                 <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="about.html" >ABOUT US</a></li>
                 <li><a href="service.html">SERVICES</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -25,7 +30,6 @@
             </ul>
             <button onclick="openNav()"><i class="fa-solid fa-bars" style="color: #fff;"></i></button>
         </div>
-         
     </div>
     <div class="hero">
         <div class="sidebar">
@@ -42,9 +46,9 @@
                 <h2>Minimalistic <br>Architecture <br> and more</h2>
                 <button class="button-1">See Project</button>
             </div>
-            <div class="hero-slider-btn">
-                <button onclick="hero()"><i class="fa-solid fa-arrow-left"></i> PREV</button>
-                <button onclick="hero()">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="hero-container">
+                <h2>Minimalistic <br>Architecture <br> and more</h2>
+                <button class="button-1">See Project</button>
             </div>
         </div>
         <div class="rightbar">
@@ -150,44 +154,6 @@
                 Won</p>
         </div>
     </div>
-    <div class="project">
-        <div class="project-head">
-            <h1>Projects</h1>
-            <ul>
-                <li>All</li>
-                <li>Restaurations</li>
-                <li>Buildings</li>
-                <li>Apartments</li>
-            </ul>
-        </div>
-        <div class="project-image">
-            <div class="project-cards">
-                <div class="card-info">
-                    <h2>
-                        Biggest <br>
-                        Restaurations
-                    </h2>
-                    <p>Jan 19,2018</p>
-                    <button>See Project</button>
-                </div>
-            </div>
-            <div class="cards"></div>
-            <div class="cards"></div>
-            <div class="cards"></div>
-        </div>
-        <div class="project-control">
-            <button><i class="fa-solid fa-arrow-left"></i> PREV</button>
-            <button>NEXT <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-    </div>
-    </div>
-    <div class="client">
-        <img src="images/1.png" alt="">
-        <img src="images/2.png" alt="">
-        <img src="images/3.png" alt="">
-        <img src="images/4.png" alt="">
-        <img src="images/5.png" alt="">
-    </div>
     <div class="footer">
         <div class="footer-media">
             <ul>
@@ -202,27 +168,29 @@
             Copyright © 2024 All rights reserved. <br>
             This template is made with <i class="fa-regular fa-heart"></i> by <a>Colorlib</a>
         </p>
-        <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-        </ul>
-        <ul>
-            <li>Terms & Conditions</li>
-            <li>FAQ</li>
-            <li>Help Desk</li>
-            <li>Job Aplications</li>
-            <li>Site Map</li>
-        </ul>
-        <ul>
-            <li>Privacy</li>
-            <li>Contact us</li>
-            <li>Newsletter</li>
-            <li>Clients Testimonials</li>
-            <li>FAQ</li>
-        </ul>
+        <div class="footer-text">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+            </ul>
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>FAQ</li>
+                <li>Help Desk</li>
+                <li>Job Aplications</li>
+                <li>Site Map</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Contact us</li>
+                <li>Newsletter</li>
+                <li>Clients Testimonials</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
     </div>
 
     <script>
@@ -236,26 +204,10 @@
         }
     </script>
     <script>
-        function hero() {
-        if(document.querySelector(".rightbar span a ").innerHTML == "01 /"){
-            document.querySelector(".rightbar span a ").innerHTML = "02 /";
-            console.log("01")
-        }else{
-            document.querySelector(".rightbar span a ").innerHTML = "01 /";
-            console.log("out") 
-        }
-    }     
-
-        let a = 1;
-        setInterval(() => { 
-
-            const selectedElement = document.querySelector('.client>:first-child'); // replace with your element's selector
-            selectedElement.remove();
-            document.querySelector(".client").innerHTML += `<img src="images/${a}.png" alt="">`
-            a++; 
-            if(a>5){a =1};     
-        }, 6000)
+        $(document).ready(function(){
+         $('.hero-ctn').slick({
+         });
+        });	
     </script>
 </body>
-
 </html>

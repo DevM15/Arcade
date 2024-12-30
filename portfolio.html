@@ -28,12 +28,12 @@
     </div>
     <div class="gallery">
         <div class="gallery-option">
-            <button>All</button>
-            <button>Photography</button>
-            <button>Design</button>
-            <button>Identity</button>
-            <button>Corporate</button>
-            <button>UI/UX</button>
+            <button onclick="showAll()">All</button>
+            <button onclick="showph()">Photography</button>
+            <button onclick="showde()">Design</button>
+            <button onclick="showid()">Identity</button>
+            <button onclick="showde()">Corporate</button>
+            <button onclick="showid()">UI/UX</button>
         </div>
         <div class="main">
             <div class="grid">
@@ -106,6 +106,38 @@
         function closeNav() {
             document.querySelector('.nav ul').style.right = "-600px";
             document.querySelector('.nav').style.overflow = "hidden";
+        }
+        function showAll() {
+            document.querySelector('.col-1').style.display = "block";
+            document.querySelector('.col-2').style.display = "block";
+            document.querySelector('.col-3').style.display = "block";
+            document.querySelector('.col-4').style.display = "block";
+            document.querySelector('.col-5').style.display = "block";
+            document.querySelector('.col-6').style.display = "block";
+        }
+        function showph() {
+            document.querySelector('.col-1').style.display = "block";
+            document.querySelector('.col-2').style.display = "none";
+            document.querySelector('.col-3').style.display = "block";
+            document.querySelector('.col-4').style.display = "none";
+            document.querySelector('.col-5').style.display = "none";
+            document.querySelector('.col-6').style.display = "none";
+        }
+        function showde() {
+            document.querySelector('.col-1').style.display = "none";
+            document.querySelector('.col-2').style.display = "block";
+            document.querySelector('.col-3').style.display = "none";
+            document.querySelector('.col-4').style.display = "block";
+            document.querySelector('.col-5').style.display = "none";
+            document.querySelector('.col-6').style.display = "block";
+        }
+        function showid() {
+            document.querySelector('.col-1').style.display = "none";
+            document.querySelector('.col-2').style.display = "none";
+            document.querySelector('.col-3').style.display = "block";
+            document.querySelector('.col-4').style.display = "none";
+            document.querySelector('.col-5').style.display = "block";
+            document.querySelector('.col-6').style.display = "none";
         }
     </script>
 </body>

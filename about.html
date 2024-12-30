@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Arcade</title>
+
+    <!-- slick carousel -->
+    <script type="text/javascript" src="https:/code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https:/code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https:/cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <div class="nav">
@@ -51,10 +57,24 @@
             <span>"</span>
             <br>
             <div class="slider">
-                <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
-                <br>
-                <h4>Maria Westminster</h4>
-                <p>Client</p>
+                <div>
+                    <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
+                    <br>
+                    <h4>Maria Westminster</h4>
+                    <p>Client</p>
+                </div>
+                <div>
+                    <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
+                    <br>
+                    <h4>Maria Westminster</h4>
+                    <p>Client</p>
+                </div>
+                <div>
+                    <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
+                    <br>
+                    <h4>Maria Westminster</h4>
+                    <p>Client</p>
+                </div>
             </div>
         </div>
     </div>
@@ -140,6 +160,15 @@
             document.querySelector('.nav ul').style.right = "-600px";
             document.querySelector('.nav').style.overflow = "hidden";
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+         $('.slider').slick({
+            arrows: false, 
+            autoplay: true,
+            autoplaySpeed: 2000,
+         });
+        });	
     </script>
 </body>
 </html>

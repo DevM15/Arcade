@@ -143,7 +143,7 @@
 }
 
 .cta>img{
-    max-width: 600px;
+    max-width: 650px;
     height: 800px;
 }
 
@@ -166,6 +166,10 @@
     background-color: #baff00;
     color: #222;
     padding: 0 10px;
+}
+
+.slider h4{
+    color: #baff00;
 }
 
 /* team */

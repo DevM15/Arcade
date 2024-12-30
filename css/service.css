@@ -109,6 +109,11 @@
     margin: auto;
 }
 
+.slider{
+    width: 30%;
+    height: 100%;
+}
+
 .slider img{
     width: 100%;
     height: 100%;
@@ -481,6 +486,9 @@
     .hero h1{
         min-width: 720px;
     } 
+    .slider{
+        width: 100%;
+    }
     .footer{
         flex-direction: column-reverse;
     }
@@ -558,6 +566,9 @@
     }
     .nav-option ul li span{
         display: none;
+    }
+    .slider{
+        width: 100%;
     }
     .footer{
         flex-direction: column-reverse;
@@ -691,6 +702,9 @@
     }
     .cta2 div h2{
         font-size: 40px;
+    }
+    .slider{
+        width: 100%;
     }
     .footer{
         flex-direction: column-reverse;
